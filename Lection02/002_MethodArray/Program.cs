@@ -1,19 +1,20 @@
 ﻿Console.Write("Введите число: ");
-int elem = Convert.ToInt32(Console.ReadLine());
+int find = Convert.ToInt32(Console.ReadLine());
 int[] Massive ={1, 2, 3, 4, 5, 6, 7, 8};
 
-int ElemFind(int[] array, int elem)
+void ElemFind(int[] array, int elem)
 {
-    foreach (int i in array)
+    int i = 0;
+    while (i < array.Length-1)
     {
-        if (i == elem)
+        if (array[i] == elem)
         {
             Console.Write($"{elem} есть в массиве");
             break;
         }
-        Console.Write($"{elem} не найден в массиве");    
+        i++;
     }
-    return;
+    
 }
 
-ElemFind(Massive, elem);
+ElemFind(Massive, find);
