@@ -6,4 +6,4 @@
 
 # Вспомогательные функции
 
-**new Random().Next(mix,max)** - дает случайное wtkjt число от min до max-1
+**new Random().Next(mix,max)** - дает случайное целое число от min до max-1 
