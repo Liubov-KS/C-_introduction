@@ -15,7 +15,8 @@
 Console.WriteLine("Введите число для проверки на палиндромность: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-int digitsCount(int a)                                          // Шаг 1. Считаем количество цифр в числе для преобразования числа в массив без использования List<T>.
+// Шаг 1. Считаем количество цифр в числе для преобразования числа в массив без использования List<T>.
+int digitsCount(int a)                                          
 {
     int digitsCounter = 0;
     if (a < 0) a = -a;
@@ -28,7 +29,8 @@ int digitsCount(int a)                                          // Шаг 1. С�
 }
 int amountOfDigits = (digitsCount(num));
 
-int[] ToArrayConvertor(int number, int length)                  // Шаг 2. Превращаем число в массив цифр из которых оно состоит.
+// Шаг 2. Превращаем число в массив цифр из которых оно состоит.
+int[] ToArrayConvertor(int number, int length)                  
 {
     int[] array = new int[length];
     for (int index = 0; index < length; index++)
@@ -38,9 +40,10 @@ int[] ToArrayConvertor(int number, int length)                  // Шаг 2. П�
     }
     return array;
 } 
-int[] resultarray = ToArrayConvertor(num, amountOfDigits);
+int[] resultArray = ToArrayConvertor(num, amountOfDigits);
 
-bool PalindromeChecker(int[] array)                             // Шаг 3. Проверяем элементы массива на "палиндромность".
+// Шаг 3. Проверяем элементы массива на "палиндромность".
+bool PalindromeChecker(int[] array)                             
 {
     for (int index = 0; index < array.Length; index++)
     {
@@ -51,8 +54,9 @@ bool PalindromeChecker(int[] array)                             // Шаг 3. П�
     }
     return true;
 }
-bool palindromeness = PalindromeChecker(resultarray);           // Шаг 4. Выводим результат.
+bool palindromeness = PalindromeChecker(resultArray);           
 
+// Шаг 4. Выводим результат.
 if (palindromeness == true)
 {
     Console.WriteLine("Ура, введенное число - палиндром.");
