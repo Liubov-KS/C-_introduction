@@ -3,7 +3,7 @@ int firstNum = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int secondNum = Convert.ToInt32(Console.ReadLine());
 
-if (firstNum*firstNum == secondNum | secondNum*secondNum == firstNum)
+if (firstNum*firstNum == secondNum || secondNum*secondNum == firstNum)
 {
     Console.Write("Одно из чисел является квадратом другого.");
 }
