@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Seminar03/HomeWork.019_Palindrome/bin/Debug/net6.0/HomeWork.019_Palindrome.dll",
+            "program": "${workspaceFolder}/Seminar04/Task_29/bin/Debug/net6.0/Task_29.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Seminar03/HomeWork.019_Palindrome",
+            "cwd": "${workspaceFolder}/Seminar04/Task_29",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
