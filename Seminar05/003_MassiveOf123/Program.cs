@@ -33,6 +33,6 @@ int ElemCounter(int[] array)
 }
 
 int[] massive = ArrayOfRandom(123);
-// PrinterArray(massive);
+PrinterArray(massive);
 string result =Convert.ToString(ElemCounter(massive));
 Console.Write(result);
