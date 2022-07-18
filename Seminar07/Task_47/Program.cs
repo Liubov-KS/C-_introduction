@@ -6,7 +6,7 @@ m = 3, n = 4.
 8 7,8 -7,1 9
 */
 
-Console.WriteLine("Давайте создадим таблицу из случайны вещественных чисел. Cколько в таблице будет строк?");
+Console.WriteLine("Давайте создадим таблицу из случайных вещественных чисел. Cколько в таблице будет строк?");
 int amountOfStr = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Cколько в таблице будет колонок?");
 int amountOfCol = Convert.ToInt32(Console.ReadLine());
