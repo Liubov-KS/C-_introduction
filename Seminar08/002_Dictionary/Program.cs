@@ -55,9 +55,10 @@ int[,] Dictionary(int[] array)
     int amountOfLines = array.Distinct().ToArray().Length;
     int[,] result = new int[2, amountOfLines];
     // заполняем ключи словаря
+    int[] uniqes = array.Distinct().ToArray();
     for (int i = 0; i < result.GetLength(1); i++)
     {
-        result[0, i] = array.Distinct().ToArray()[i];
+        result[0, i] = uniqes[i];
     }
     // заполняем значения словаря
     int currentElem = array[0];
@@ -77,11 +78,15 @@ int[,] Dictionary(int[] array)
                 positionOfvalue++;
         }
     }
+    // чистой воды костыль. если наибольший элемент массива представлен 1 экземпляром, то не происходит запись в последнюю ячейку словаря.
+    if (result[result.GetLength(0)-1, result.GetLength(1)-1] == 0) 
+    {
+        result[result.GetLength(0)-1, result.GetLength(1)-1] = 1;
+    }
     return result;
 }
 
-
-int[,] matr = MatrixOfRandomInt(3, 3, 1, 5);
+int[,] matr = MatrixOfRandomInt(2, 2, 1, 3);
 int[] res = FromMatrixToArray(matr);
 Array.Sort(res);
 

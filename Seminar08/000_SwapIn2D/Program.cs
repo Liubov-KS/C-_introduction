@@ -42,3 +42,4 @@ PrinterMatrix(matr);
 Console.WriteLine();
 FirstLastLinesSwapper(matr);
 PrinterMatrix(matr);
+Console.ReadLine();
