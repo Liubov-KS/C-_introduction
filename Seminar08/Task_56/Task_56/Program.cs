@@ -67,4 +67,4 @@ int[,] matr = MatrixOfRandomInt(2, 4, 1, 5);
 PrinterMatrix(matr);
 Console.WriteLine();
 int res = LineWithLesserSumOfElems(matr);
-Console.WriteLine(res);
+Console.WriteLine($"Строка с наименьшей суммой элементов имеет индекс {res}.");
