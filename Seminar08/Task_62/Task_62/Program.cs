@@ -68,6 +68,7 @@ MatrixSpiralFiller(matrix, 0, 0, 1);
 PrinterMatrix(matrix);
 
 
+// Начал думать, но это более сложная задача
     if (tic == matrix.GetLength(0)*matrix.GetLength(1)) return; // tic стартует с 0.
     matrix[x, y] = tic;
     tic++;
