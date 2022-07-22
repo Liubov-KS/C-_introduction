@@ -29,6 +29,7 @@
    (цикл замкнулся).
 */
 
+DateTime date1 = DateTime.Now;
 int[,] matrix = new int[4,4];
 
 // реализация работает, но, к сожалению, только к матрице 4х4, на нее завязаны условия. 
@@ -67,12 +68,16 @@ void PrinterMatrix(int[,] matrix)
 MatrixSpiralFiller(matrix, 0, 0, 1);
 PrinterMatrix(matrix);
 
+DateTime date2 = DateTime.Now;
+var diff = date2-date1;
+Console.Write($"{diff}");
 
-// Начал думать, но это более сложная задача
-    if (tic == matrix.GetLength(0)*matrix.GetLength(1)) return; // tic стартует с 0.
-    matrix[x, y] = tic;
-    tic++;
-    if ((tic >= 0 && tic <= matrix.GetLength(1)-1) || ((tic >= 13 && tic <= 14))) MatrixSpiralFiller(matrix, x, y+1, tic); // идем по строке слева направо
-    if ((tic >= 5 && tic <= 7) || tic == 15) MatrixSpiralFiller(matrix, x+1, y, tic);                  // идем по столбцу сверху вниз
-    if ((tic >= 8 && tic <= 10)|| tic == 16) MatrixSpiralFiller(matrix, x, y-1, tic);                  // идем по строке справа налево
-    if (tic >= 11 && tic <= 12) MatrixSpiralFiller(matrix, x-1, y, tic);                               // идем по столбцу снизу вверх    
+
+// // Начал думать, но это более сложная задача
+//     if (tic == matrix.GetLength(0)*matrix.GetLength(1)) return; // tic стартует с 0.
+//     matrix[x, y] = tic;
+//     tic++;
+//     if ((tic >= 0 && tic <= matrix.GetLength(1)-1) || ((tic >= 13 && tic <= 14))) MatrixSpiralFiller(matrix, x, y+1, tic); // идем по строке слева направо
+//     if ((tic >= 5 && tic <= 7) || tic == 15) MatrixSpiralFiller(matrix, x+1, y, tic);                  // идем по столбцу сверху вниз
+//     if ((tic >= 8 && tic <= 10)|| tic == 16) MatrixSpiralFiller(matrix, x, y-1, tic);                  // идем по строке справа налево
+//     if (tic >= 11 && tic <= 12) MatrixSpiralFiller(matrix, x-1, y, tic);                               // идем по столбцу снизу вверх    

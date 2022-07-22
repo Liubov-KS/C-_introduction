@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Seminar08//Task_62/Task_62/Task_62.csproj",  
+                "${workspaceFolder}/Seminar09/Task_66/Task_66.csproj",  
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Seminar08//Task_62/Task_62/Task_62.csproj",
+                "${workspaceFolder}/Seminar09/Task_66/Task_66.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/Seminar08//Task_62/Task_62/Task_62.csproj"
+                "${workspaceFolder}/Seminar09/Task_66/Task_66.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

@@ -56,6 +56,7 @@ void LinesSorter(int[,] matrix)
             temp[i] = matrix[j, i];
         }
         Array.Sort(temp);
+        Array.Reverse(temp);
         for (int i = 0; i < matrix.GetLength(1); i++)
         {
             matrix[j, i] = temp[i];
