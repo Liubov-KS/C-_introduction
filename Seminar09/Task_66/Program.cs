@@ -20,7 +20,7 @@ void Swapper(ref int m, ref int n)
     if (m > n)
     {
         (m, n) = (n, m);
-    }  
+    }
 }
 
 void SummBetweenMandN (int m, int n, int sum)
